@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--
+  SITE_URL = https://chacaramanancial.netlify.app
+
+  Endereço público do site. Ao publicar em outro endereço (ou domínio próprio),
+  troque este valor em: <link rel="canonical">, og:url, og:image, twitter:image
+  e no JSON-LD (campos "url" e "image") logo abaixo.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chácara Manancial – Espaço para Casamentos e Eventos na Grande Florianópolis</title>
+  <meta name="description" content="Casamentos ao ar livre, destination weddings e eventos de alto padrão em Antônio Carlos (SC), na Grande Florianópolis. Arquitetura, paisagismo e hospitalidade para até 500 convidados. Consulte datas e agende sua visita.">
+  <meta name="theme-color" content="#435130">
+  <link rel="canonical" href="https://chacaramanancial.netlify.app/">
+
+  <!-- Open Graph: prévia do link no WhatsApp, Instagram e Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Chácara Manancial">
+  <meta property="og:title" content="Chácara Manancial – Casamentos e Eventos na Grande Florianópolis">
+  <meta property="og:description" content="Arquitetura, paisagismo e hospitalidade para o dia mais importante da sua vida. Casamentos ao ar livre para até 500 convidados em Antônio Carlos (SC).">
+  <meta property="og:url" content="https://chacaramanancial.netlify.app/">
+  <meta property="og:image" content="https://chacaramanancial.netlify.app/img/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://chacaramanancial.netlify.app/img/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mesas postas ao ar livre diante da cascata natural da Chácara Manancial">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chácara Manancial – Casamentos e Eventos na Grande Florianópolis">
+  <meta name="twitter:description" content="Arquitetura, paisagismo e hospitalidade para o dia mais importante da sua vida.">
+  <meta name="twitter:image" content="https://chacaramanancial.netlify.app/img/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Primeira foto do topo carrega com prioridade (primeira tela rápida no 4G) -->
+  <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+        imagesrcset="img/essenza-cascata-mesas-400.webp 400w, img/essenza-cascata-mesas-800.webp 800w, img/essenza-cascata-mesas-1200.webp 1200w, img/essenza-cascata-mesas-1280.webp 1280w" imagesizes="100vw">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "Chácara Manancial",
+    "description": "Espaço para casamentos ao ar livre, destination weddings, eventos sociais e corporativos de alto padrão na Grande Florianópolis.",
+    "url": "https://chacaramanancial.netlify.app/",
+    "image": "https://chacaramanancial.netlify.app/img/og-image.jpg",
+    "telephone": "+55 48 99190-0552",
+    "maximumAttendeeCapacity": 500,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Manoel Antônio Lopes",
+      "addressLocality": "Antônio Carlos",
+      "addressRegion": "SC",
+      "postalCode": "88180-000",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -27.5175, "longitude": -48.7304 },
+    "sameAs": ["https://www.instagram.com/chacaramanancial_/"]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Ícones (traço fino, herdam a cor do texto) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.37l-.36-.22-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+  <symbol id="i-rings" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="18.5" cy="29" r="11"/><circle cx="29.5" cy="29" r="11"/><path d="M24 7.5l3.5 4-3.5 4-3.5-4z"/><path d="M20.5 11.5h7"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="24" cy="24" r="16"/><ellipse cx="24" cy="24" rx="7" ry="16"/><path d="M8 24h32M10.5 16h27M10.5 32h27"/><path d="M36 6l6 2-2 6" /><path d="M42 8c-3-1-5.5-1.5-8-1.5"/></symbol>
+  <symbol id="i-toast" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M10.5 12.5l9-2.4 1.3 9.6a4.6 4.6 0 0 1-8.9 2.4z"/><path d="M16.6 24.4l3.3 12.3M15.3 37.5l9-2.4"/><path d="M37.5 12.5l-9-2.4-1.3 9.6a4.6 4.6 0 0 0 8.9 2.4z"/><path d="M31.4 24.4l-3.3 12.3M32.7 37.5l-9-2.4"/><path d="M24 4v3.5M19 5.5l1.5 2.5M29 5.5L27.5 8"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><rect x="7" y="15" width="34" height="23" rx="2"/><path d="M18 15v-3.5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2V15M7 25.5h34"/><path d="M21.5 23.5h5v4h-5z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M10 38C10 20 21 10 40 8c-1.5 19-12 30-30 30z"/><path d="M10 38l17-17M18 30h8M22 26v-7"/></symbol>
+  <symbol id="i-water" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M24 6c6.5 9 12 15 12 22a12 12 0 0 1-24 0c0-7 5.5-13 12-22z"/><path d="M18 30a6 6 0 0 0 6 6"/></symbol>
+  <symbol id="i-seasons" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="24" cy="24" r="7"/><path d="M24 7v5M24 36v5M7 24h5M36 24h5M12 12l3.5 3.5M32.5 32.5L36 36M12 36l3.5-3.5M32.5 15.5L36 12"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M6 26l8 2 6-6-12-9 4-2 17 5 7-7c2-2 5-2 5 0s-2 3-2 3l-7 7 5 17-2 4-9-12-6 6 2 8-3 1-4-8-8-4z"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M6 36V12M6 30h36v6M42 30v-5a5 5 0 0 0-5-5H21v10"/><circle cx="13.5" cy="22.5" r="3.5"/></symbol>
+  <symbol id="i-car" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M8 31v-6l4-9a3 3 0 0 1 2.8-2h18.4a3 3 0 0 1 2.8 2l4 9v6z"/><path d="M8 25h32M8 31v4h5v-4M35 31v4h5v-4"/><circle cx="14" cy="28" r="1"/><circle cx="34" cy="28" r="1"/></symbol>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ MENU ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#inicio" aria-label="Chácara Manancial — início">
+      <span class="brand__kicker">Chácara</span>
+      <span class="brand__name">Manancial</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Menu principal">
+      <ul class="nav__list">
+        <li><a href="#espacos">Espaços</a></li>
+        <li><a href="#paisagismo">Paisagismo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#datas">Datas</a></li>
+        <li><a href="#orcamento">Orçamento</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+      <a class="btn btn--small nav__cta" href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20Ch%C3%A1cara%20Manancial." target="_blank" rel="noopener">Agendar visita</a>
+      <div class="nav__foot">
+        <p>Rua Manoel Antônio Lopes<br>Antônio Carlos · SC</p>
+        <a href="https://www.instagram.com/chacaramanancial_/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg>@chacaramanancial_</a>
+      </div>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ 1. TOPO ============ -->
+<section class="hero" id="inicio" aria-label="Chácara Manancial">
+  <div class="hero__slides" aria-hidden="true">
+    <div class="hero__slide is-active" style="--pos: 38% 55%"><img src="img/essenza-cascata-mesas-800.webp" srcset="img/essenza-cascata-mesas-400.webp 400w, img/essenza-cascata-mesas-800.webp 800w, img/essenza-cascata-mesas-1200.webp 1200w, img/essenza-cascata-mesas-1280.webp 1280w" sizes="100vw" width="1280" height="853" decoding="async" alt="" loading="eager" fetchpriority="high"></div>
+    <div class="hero__slide" style="--pos: 50% 40%"><img data-src="img/salao-estrutura-madeira-800.webp" data-srcset="img/salao-estrutura-madeira-400.webp 400w, img/salao-estrutura-madeira-800.webp 800w, img/salao-estrutura-madeira-1200.webp 1200w, img/salao-estrutura-madeira-1320.webp 1320w" sizes="100vw" width="1320" height="1320" alt="" decoding="async"></div>
+    <div class="hero__slide" style="--pos: 50% 50%"><img data-src="img/salao-tenda-fixa-800.webp" data-srcset="img/salao-tenda-fixa-400.webp 400w, img/salao-tenda-fixa-800.webp 800w, img/salao-tenda-fixa-1200.webp 1200w, img/salao-tenda-fixa-1600.webp 1600w, img/salao-tenda-fixa-1920.webp 1920w" sizes="100vw" width="1920" height="1280" alt="" decoding="async"></div>
+    <div class="hero__slide" style="--pos: 55% 60%"><img data-src="img/essenza-lounge-jardim-800.webp" data-srcset="img/essenza-lounge-jardim-400.webp 400w, img/essenza-lounge-jardim-800.webp 800w, img/essenza-lounge-jardim-1151.webp 1151w" sizes="100vw" width="1151" height="1151" alt="" decoding="async"></div>
+  </div>
+  <div class="hero__shade" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="hero__kicker">Antônio Carlos · Grande Florianópolis</p>
+    <h1 class="hero__title">Chácara <em>Manancial</em></h1>
+    <span class="hero__rule" aria-hidden="true"></span>
+    <p class="hero__lead">Arquitetura, paisagismo e hospitalidade para o dia mais importante da sua vida.</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20Ch%C3%A1cara%20Manancial." target="_blank" rel="noopener">Agendar visita</a>
+      <a class="btn btn--ghost-light" href="#datas">Ver datas</a>
+    </div>
+  </div>
+
+  <div class="hero__dots" role="group" aria-label="Fotos do topo">
+    <button type="button" class="is-active" aria-label="Foto 1: mesas diante da cascata"></button>
+    <button type="button" aria-label="Foto 2: salão com estrutura de madeira"></button>
+    <button type="button" aria-label="Foto 3: tenda fixa"></button>
+    <button type="button" aria-label="Foto 4: lounge no jardim"></button>
+  </div>
+  <a class="hero__scroll" href="#manifesto" aria-label="Rolar para conhecer o espaço"><span></span></a>
+</section>
+
+<!-- ============ 2. MANIFESTO ============ -->
+<section class="section manifesto" id="manifesto">
+  <div class="container manifesto__grid">
+    <div class="manifesto__text reveal">
+      <p class="kicker">Manifesto</p>
+      <h2 class="title">Um lugar pensado a partir das <em>pessoas</em>.</h2>
+      <p class="lead">Antes de existir, a Chácara Manancial foi desenho, estudo e muitas madrugadas. Cada ambiente nasceu de uma pergunta simples: como alguém vai se sentir aqui?</p>
+      <p>Entre uma cascata natural, o som do riacho e a riqueza da flora tropical, a arquitetura contemporânea abre espaço para o que realmente importa: a sua história, as pessoas que você ama e um dia vivido sem pressa.</p>
+      <blockquote class="manifesto__quote">
+        <p>“A arquitetura ganha vida quando as pessoas passam a habitá-la.”</p>
+        <cite>Bruna Pierri — arquiteta, paisagista e anfitriã</cite>
+      </blockquote>
+    </div>
+    <figure class="manifesto__media reveal reveal--delay">
+      <div class="manifesto__main"><img src="img/paisagismo-passarela-noiva-720.webp" srcset="img/paisagismo-passarela-noiva-400.webp 400w, img/paisagismo-passarela-noiva-720.webp 720w" sizes="(min-width: 960px) 34vw, 80vw" width="720" height="1280" alt="Noiva caminhando pela passarela de madeira entre a vegetação do jardim" loading="lazy" decoding="async"></div>
+      <div class="manifesto__inset"><img src="img/paisagismo-deck-jardim-720.webp" srcset="img/paisagismo-deck-jardim-400.webp 400w, img/paisagismo-deck-jardim-720.webp 720w" sizes="(min-width: 960px) 16vw, 40vw" width="720" height="1280" alt="Deck de madeira e caminho de pedras entre o gramado, canteiros e a mata nativa" loading="lazy" decoding="async"></div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 3. OS ESPAÇOS ============ -->
+<section class="section spaces" id="espacos">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="kicker">Os espaços</p>
+      <h2 class="title">Ambientes que se conectam,<br><em>do sim à última dança.</em></h2>
+      <p class="section-head__text">Cada ambiente foi projetado para se conectar ao outro, permitindo layouts que respeitam o estilo do casal, o clima do dia e a proposta de cada celebração.</p>
+    </header>
+
+    <article class="space reveal">
+      <div class="space__media"><img src="img/essenza-jardim-convidados-800.webp" srcset="img/essenza-jardim-convidados-400.webp 400w, img/essenza-jardim-convidados-800.webp 800w, img/essenza-jardim-convidados-854.webp 854w" sizes="(min-width: 960px) 56vw, 100vw" width="854" height="569" alt="Convidados circulando pelo Essenza Garden entre ombrelones brancos, canteiros floridos e a mata" loading="lazy" decoding="async"></div>
+      <div class="space__body">
+        <span class="space__num">01</span>
+        <h3 class="space__title">Essenza Garden</h3>
+        <p class="space__sub">O jardim das cerimônias</p>
+        <p>Gramado, caminhos de pedra e canteiros desenhados para o “sim” ao ar livre, com a mata nativa e a cascata natural como pano de fundo.</p>
+      </div>
+    </article>
+
+    <article class="space space--alt reveal">
+      <div class="space__media">
+        <img src="img/casa-branca-sala-800.webp" srcset="img/casa-branca-sala-400.webp 400w, img/casa-branca-sala-800.webp 800w, img/casa-branca-sala-1036.webp 1036w" sizes="(min-width: 960px) 56vw, 100vw" width="1036" height="690" alt="Sala da Casa Branca com sofá, poltrona e plantas junto à janela com cortinas leves" loading="lazy" decoding="async">
+        <div class="space__inset"><img src="img/casa-branca-noiva-espelho-800.webp" srcset="img/casa-branca-noiva-espelho-400.webp 400w, img/casa-branca-noiva-espelho-800.webp 800w, img/casa-branca-noiva-espelho-1200.webp 1200w, img/casa-branca-noiva-espelho-1600.webp 1600w, img/casa-branca-noiva-espelho-2000.webp 2000w" sizes="(min-width: 960px) 14vw, 30vw" width="2000" height="2668" alt="Noiva de vestido volumoso diante do espelho do ateliê, em preto e branco" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="space__body">
+        <span class="space__num">02</span>
+        <h3 class="space__title">Casa Branca <span class="space__bar">|</span> <span class="nowrap">Making of</span></h3>
+        <p class="space__sub">Com Ateliê da Noiva</p>
+        <p>Uma casa inteira dedicada às horas que antecedem a cerimônia: luz natural, ambientes acolhedores e um ateliê pensado para a noiva, as madrinhas e a equipe de beleza.</p>
+      </div>
+    </article>
+
+    <article class="space reveal">
+      <div class="space__media"><img src="img/salao-estrutura-madeira-800.webp" srcset="img/salao-estrutura-madeira-400.webp 400w, img/salao-estrutura-madeira-800.webp 800w, img/salao-estrutura-madeira-1200.webp 1200w, img/salao-estrutura-madeira-1320.webp 1320w" sizes="(min-width: 960px) 56vw, 100vw" width="1320" height="1320" alt="Salão com estrutura de madeira aparente no telhado e mesas postas com arranjos coloridos" loading="lazy" decoding="async"></div>
+      <div class="space__body">
+        <span class="space__num">03</span>
+        <h3 class="space__title">Salão de eventos</h3>
+        <p class="space__sub">Integrado à natureza</p>
+        <p>Estrutura de madeira aparente, grandes aberturas de vidro e climatização. O salão se integra à Tenda Fixa e ao Solar, para a festa fluir entre os ambientes, faça sol ou frio.</p>
+      </div>
+    </article>
+
+    <article class="space space--alt reveal">
+      <div class="space__media"><img src="img/geral-cozinha-industrial-800.webp" srcset="img/geral-cozinha-industrial-400.webp 400w, img/geral-cozinha-industrial-800.webp 800w, img/geral-cozinha-industrial-1200.webp 1200w, img/geral-cozinha-industrial-1600.webp 1600w, img/geral-cozinha-industrial-1920.webp 1920w" sizes="(min-width: 960px) 56vw, 100vw" width="1920" height="1280" alt="Cozinha industrial com fogões, forno e refrigeradores em inox" loading="lazy" decoding="async"></div>
+      <div class="space__body">
+        <span class="space__num">04</span>
+        <h3 class="space__title">Cozinha industrial</h3>
+        <p class="space__sub">Para quem faz a festa acontecer</p>
+        <p>Cozinha industrial completa, com estrutura em inox para buffet e equipe de serviço, além de amplos banheiros para convidados e fornecedores.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 4. PAISAGISMO ============ -->
+<section class="section landscape" id="paisagismo">
+  <div class="container landscape__grid">
+    <div class="landscape__text reveal">
+      <p class="kicker kicker--light">Paisagismo</p>
+      <h2 class="title title--light">Um jardim que amadurece<br><em>com o tempo.</em></h2>
+      <p class="lead">O paisagismo é assinado por Bruna Pierri, arquiteta e paisagista que leva esse olhar também às suas palestras sobre o tema. Desde o primeiro plantio, cada muda é acompanhada de perto.</p>
+      <p>Folhagens tropicais, flores da estação e a mata nativa compõem uma paisagem viva, que ganha volume e muda de cor a cada estação. A cerimônia acontece dentro de um jardim que tem história.</p>
+      <blockquote class="landscape__quote">“No paisagismo, o tempo é parte fundamental do projeto.”</blockquote>
+      <ul class="pillars">
+        <li><svg class="pillars__icon" aria-hidden="true"><use href="#i-water"/></svg><span><strong>Cascata natural</strong>e o som do riacho</span></li>
+        <li><svg class="pillars__icon" aria-hidden="true"><use href="#i-leaf"/></svg><span><strong>Flora tropical</strong>em canteiros autorais</span></li>
+        <li><svg class="pillars__icon" aria-hidden="true"><use href="#i-seasons"/></svg><span><strong>Cuidado diário</strong>em todas as estações</span></li>
+      </ul>
+    </div>
+    <div class="landscape__mosaic">
+      <div class="landscape__a reveal"><img src="img/paisagismo-folhagens-mesa-800.webp" srcset="img/paisagismo-folhagens-mesa-400.webp 400w, img/paisagismo-folhagens-mesa-800.webp 800w, img/paisagismo-folhagens-mesa-1200.webp 1200w, img/paisagismo-folhagens-mesa-1600.webp 1600w, img/paisagismo-folhagens-mesa-2000.webp 2000w" sizes="(min-width: 960px) 30vw, 60vw" width="2000" height="2000" alt="Mesa posta diante de folhagens tropicais de folhas largas" loading="lazy" decoding="async"></div>
+      <div class="landscape__b reveal reveal--delay"><img src="img/paisagismo-arranjo-suspenso-800.webp" srcset="img/paisagismo-arranjo-suspenso-400.webp 400w, img/paisagismo-arranjo-suspenso-800.webp 800w, img/paisagismo-arranjo-suspenso-853.webp 853w" sizes="(min-width: 960px) 22vw, 40vw" width="853" height="568" alt="Arranjo suspenso de folhagens e flores laranja sob o voal, com a mata ao fundo" loading="lazy" decoding="async"></div>
+      <div class="landscape__c reveal reveal--delay"><img src="img/paisagismo-canteiro-pedras-800.webp" srcset="img/paisagismo-canteiro-pedras-400.webp 400w, img/paisagismo-canteiro-pedras-800.webp 800w, img/paisagismo-canteiro-pedras-853.webp 853w" sizes="(min-width: 960px) 22vw, 40vw" width="853" height="568" alt="Rosas e folhagens junto ao caminho de pedras e ao gramado" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TIPOS DE EVENTO ============ -->
+<section class="section events" id="eventos">
+  <div class="container">
+    <header class="section-head section-head--center reveal">
+      <p class="kicker">Celebrações</p>
+      <h2 class="title">Para cada história,<br><em>um jeito de celebrar.</em></h2>
+    </header>
+    <ul class="events__list">
+      <li class="event reveal">
+        <svg class="event__icon" aria-hidden="true"><use href="#i-rings"/></svg>
+        <h3>Casamentos ao ar livre</h3>
+        <p>Cerimônia no Essenza Garden e recepção que flui do jardim ao salão. Também para mini weddings.</p>
+      </li>
+      <li class="event reveal">
+        <svg class="event__icon" aria-hidden="true"><use href="#i-globe"/></svg>
+        <h3>Destination wedding</h3>
+        <p>Para casais e convidados que vêm de longe, perto de Florianópolis, das praias e da serra.</p>
+      </li>
+      <li class="event reveal">
+        <svg class="event__icon" aria-hidden="true"><use href="#i-toast"/></svg>
+        <h3>Eventos sociais</h3>
+        <p>Bodas, aniversários e festas de 15 anos com a mesma atenção e exclusividade de um casamento.</p>
+      </li>
+      <li class="event reveal">
+        <svg class="event__icon" aria-hidden="true"><use href="#i-briefcase"/></svg>
+        <h3>Eventos corporativos</h3>
+        <p>Confraternizações, lançamentos e encontros de alto padrão, cercados por natureza.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 6. PARA QUEM VEM DE FORA ============ -->
+<section class="section travel" id="destination">
+  <div class="container travel__grid">
+    <div class="travel__media reveal"><img src="img/essenza-noiva-cascata-720.webp" srcset="img/essenza-noiva-cascata-400.webp 400w, img/essenza-noiva-cascata-720.webp 720w" sizes="(min-width: 960px) 36vw, 90vw" width="720" height="1280" alt="Noiva com véu longo diante da cascata natural da chácara" loading="lazy" decoding="async"></div>
+    <div class="travel__body reveal reveal--delay">
+      <p class="kicker">Destination wedding</p>
+      <h2 class="title">Para quem<br><em>vem de fora.</em></h2>
+      <p class="lead">A Chácara Manancial fica na Grande Florianópolis: perto do aeroporto, das praias da Ilha e da serra catarinense. Seus convidados chegam fácil e aproveitam a viagem.</p>
+      <ul class="travel__list">
+        <li>
+          <svg class="travel__icon" aria-hidden="true"><use href="#i-plane"/></svg>
+          <div>
+            <h3>Aeroporto de Florianópolis (FLN)</h3>
+            <p>Cerca de 45 km, aproximadamente 55 minutos de carro. <mark class="tbc">[A CONFIRMAR]</mark></p>
+          </div>
+        </li>
+        <li>
+          <svg class="travel__icon" aria-hidden="true"><use href="#i-bed"/></svg>
+          <div>
+            <h3>Hospedagem próxima</h3>
+            <p>Pousadas rurais em Antônio Carlos, hotéis de águas termais em Santo Amaro da Imperatriz e a rede hoteleira de São José e Florianópolis. <mark class="tbc">[A CONFIRMAR]</mark></p>
+          </div>
+        </li>
+        <li>
+          <svg class="travel__icon" aria-hidden="true"><use href="#i-car"/></svg>
+          <div>
+            <h3>Transfer para convidados</h3>
+            <p>Indicamos parceiros de transporte entre hotéis e a chácara, com ida e volta no dia do evento. <mark class="tbc">[A CONFIRMAR]</mark></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. GALERIA ============ -->
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <header class="section-head section-head--center reveal">
+      <p class="kicker">Galeria</p>
+      <h2 class="title">Momentos vividos<br><em>na Manancial.</em></h2>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filtrar fotos">
+      <button type="button" class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+      <button type="button" class="filter" data-filter="cerimonias" aria-pressed="false">Cerimônias</button>
+      <button type="button" class="filter" data-filter="recepcao" aria-pressed="false">Recepção</button>
+      <button type="button" class="filter" data-filter="making-of" aria-pressed="false">Making of</button>
+      <button type="button" class="filter" data-filter="paisagismo" aria-pressed="false">Paisagismo</button>
+    </div>
+
+    <ul class="masonry" id="galleryGrid">
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/salao-estrutura-madeira-1320.webp" aria-label="Ampliar foto: Salão com estrutura de madeira aparente no telhado e mesas postas com arranjos coloridos"><img src="img/salao-estrutura-madeira-400.webp" srcset="img/salao-estrutura-madeira-400.webp 400w, img/salao-estrutura-madeira-800.webp 800w, img/salao-estrutura-madeira-1200.webp 1200w, img/salao-estrutura-madeira-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Salão com estrutura de madeira aparente no telhado e mesas postas com arranjos coloridos" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="cerimonias"><button type="button" class="masonry__btn" data-full="img/essenza-noiva-cascata-720.webp" aria-label="Ampliar foto: Noiva com véu longo diante da cascata natural da chácara"><img src="img/essenza-noiva-cascata-400.webp" srcset="img/essenza-noiva-cascata-400.webp 400w, img/essenza-noiva-cascata-720.webp 720w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="720" height="1280" alt="Noiva com véu longo diante da cascata natural da chácara" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/essenza-mesa-doces-1320.webp" aria-label="Ampliar foto: Mesa de doces com flores em tons de laranja sob luminárias verdes de franja, ao ar livre"><img src="img/essenza-mesa-doces-400.webp" srcset="img/essenza-mesa-doces-400.webp 400w, img/essenza-mesa-doces-800.webp 800w, img/essenza-mesa-doces-1200.webp 1200w, img/essenza-mesa-doces-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Mesa de doces com flores em tons de laranja sob luminárias verdes de franja, ao ar livre" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-entrada-noivos-1600.webp" aria-label="Ampliar foto: Noivos entrando no salão sorrindo, com o buquê erguido entre velas e flores"><img src="img/casamento-entrada-noivos-400.webp" srcset="img/casamento-entrada-noivos-400.webp 400w, img/casamento-entrada-noivos-800.webp 800w, img/casamento-entrada-noivos-1200.webp 1200w, img/casamento-entrada-noivos-1600.webp 1600w, img/casamento-entrada-noivos-1920.webp 1920w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1920" height="1280" alt="Noivos entrando no salão sorrindo, com o buquê erguido entre velas e flores" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-folhagens-mesa-1600.webp" aria-label="Ampliar foto: Mesa posta diante de folhagens tropicais de folhas largas"><img src="img/paisagismo-folhagens-mesa-400.webp" srcset="img/paisagismo-folhagens-mesa-400.webp 400w, img/paisagismo-folhagens-mesa-800.webp 800w, img/paisagismo-folhagens-mesa-1200.webp 1200w, img/paisagismo-folhagens-mesa-1600.webp 1600w, img/paisagismo-folhagens-mesa-2000.webp 2000w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="2000" height="2000" alt="Mesa posta diante de folhagens tropicais de folhas largas" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-noiva-espelho-1600.webp" aria-label="Ampliar foto: Noiva de vestido volumoso diante do espelho do ateliê, em preto e branco"><img src="img/casa-branca-noiva-espelho-400.webp" srcset="img/casa-branca-noiva-espelho-400.webp 400w, img/casa-branca-noiva-espelho-800.webp 800w, img/casa-branca-noiva-espelho-1200.webp 1200w, img/casa-branca-noiva-espelho-1600.webp 1600w, img/casa-branca-noiva-espelho-2000.webp 2000w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="2000" height="2668" alt="Noiva de vestido volumoso diante do espelho do ateliê, em preto e branco" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="cerimonias"><button type="button" class="masonry__btn" data-full="img/essenza-jardim-convidados-854.webp" aria-label="Ampliar foto: Convidados circulando pelo Essenza Garden entre ombrelones brancos, canteiros floridos e a mata"><img src="img/essenza-jardim-convidados-400.webp" srcset="img/essenza-jardim-convidados-400.webp 400w, img/essenza-jardim-convidados-800.webp 800w, img/essenza-jardim-convidados-854.webp 854w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="854" height="569" alt="Convidados circulando pelo Essenza Garden entre ombrelones brancos, canteiros floridos e a mata" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/salao-tenda-fixa-1600.webp" aria-label="Ampliar foto: Tenda fixa transparente com cortinas brancas, cadeiras de madeira e arranjos suspensos"><img src="img/salao-tenda-fixa-400.webp" srcset="img/salao-tenda-fixa-400.webp 400w, img/salao-tenda-fixa-800.webp 800w, img/salao-tenda-fixa-1200.webp 1200w, img/salao-tenda-fixa-1600.webp 1600w, img/salao-tenda-fixa-1920.webp 1920w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1920" height="1280" alt="Tenda fixa transparente com cortinas brancas, cadeiras de madeira e arranjos suspensos" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-deck-jardim-720.webp" aria-label="Ampliar foto: Deck de madeira e caminho de pedras entre o gramado, canteiros e a mata nativa"><img src="img/paisagismo-deck-jardim-400.webp" srcset="img/paisagismo-deck-jardim-400.webp 400w, img/paisagismo-deck-jardim-720.webp 720w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="720" height="1280" alt="Deck de madeira e caminho de pedras entre o gramado, canteiros e a mata nativa" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="cerimonias"><button type="button" class="masonry__btn" data-full="img/casamento-noivos-jardim-1138.webp" aria-label="Ampliar foto: Noivos no caminho de pedras do jardim iluminado à noite, com a cauda do vestido estendida"><img src="img/casamento-noivos-jardim-400.webp" srcset="img/casamento-noivos-jardim-400.webp 400w, img/casamento-noivos-jardim-800.webp 800w, img/casamento-noivos-jardim-1138.webp 1138w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1138" height="758" alt="Noivos no caminho de pedras do jardim iluminado à noite, com a cauda do vestido estendida" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-atelie-900.webp" aria-label="Ampliar foto: Manequins de costura e espelho com moldura de madeira no Ateliê da Noiva"><img src="img/casa-branca-atelie-400.webp" srcset="img/casa-branca-atelie-400.webp 400w, img/casa-branca-atelie-800.webp 800w, img/casa-branca-atelie-900.webp 900w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="900" height="600" alt="Manequins de costura e espelho com moldura de madeira no Ateliê da Noiva" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/essenza-lounge-ombrelone-1320.webp" aria-label="Ampliar foto: Lounge branco sob ombrelone de franjas, cercado por folhagens"><img src="img/essenza-lounge-ombrelone-400.webp" srcset="img/essenza-lounge-ombrelone-400.webp 400w, img/essenza-lounge-ombrelone-800.webp 800w, img/essenza-lounge-ombrelone-1200.webp 1200w, img/essenza-lounge-ombrelone-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Lounge branco sob ombrelone de franjas, cercado por folhagens" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-arranjo-suspenso-853.webp" aria-label="Ampliar foto: Arranjo suspenso de folhagens e flores laranja sob o voal, com a mata ao fundo"><img src="img/paisagismo-arranjo-suspenso-400.webp" srcset="img/paisagismo-arranjo-suspenso-400.webp 400w, img/paisagismo-arranjo-suspenso-800.webp 800w, img/paisagismo-arranjo-suspenso-853.webp 853w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="853" height="568" alt="Arranjo suspenso de folhagens e flores laranja sob o voal, com a mata ao fundo" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-brinde-1600.webp" aria-label="Ampliar foto: Noiva de costas erguendo a taça em um brinde com os convidados"><img src="img/casamento-brinde-400.webp" srcset="img/casamento-brinde-400.webp 400w, img/casamento-brinde-800.webp 800w, img/casamento-brinde-1200.webp 1200w, img/casamento-brinde-1600.webp 1600w, img/casamento-brinde-1920.webp 1920w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1920" height="1280" alt="Noiva de costas erguendo a taça em um brinde com os convidados" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-sala-1036.webp" aria-label="Ampliar foto: Sala da Casa Branca com sofá, poltrona e plantas junto à janela com cortinas leves"><img src="img/casa-branca-sala-400.webp" srcset="img/casa-branca-sala-400.webp 400w, img/casa-branca-sala-800.webp 800w, img/casa-branca-sala-1036.webp 1036w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1036" height="690" alt="Sala da Casa Branca com sofá, poltrona e plantas junto à janela com cortinas leves" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="cerimonias"><button type="button" class="masonry__btn" data-full="img/essenza-boas-vindas-1320.webp" aria-label="Ampliar foto: Móvel de madeira com flores amarelas e painel de boas-vindas entre helicônias no jardim"><img src="img/essenza-boas-vindas-400.webp" srcset="img/essenza-boas-vindas-400.webp 400w, img/essenza-boas-vindas-800.webp 800w, img/essenza-boas-vindas-1200.webp 1200w, img/essenza-boas-vindas-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Móvel de madeira com flores amarelas e painel de boas-vindas entre helicônias no jardim" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/salao-lounge-orquideas-1320.webp" aria-label="Ampliar foto: Lounge com orquídeas e mesas de madeira junto às portas de vidro do salão"><img src="img/salao-lounge-orquideas-400.webp" srcset="img/salao-lounge-orquideas-400.webp 400w, img/salao-lounge-orquideas-800.webp 800w, img/salao-lounge-orquideas-1200.webp 1200w, img/salao-lounge-orquideas-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Lounge com orquídeas e mesas de madeira junto às portas de vidro do salão" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-canteiro-pedras-853.webp" aria-label="Ampliar foto: Rosas e folhagens junto ao caminho de pedras e ao gramado"><img src="img/paisagismo-canteiro-pedras-400.webp" srcset="img/paisagismo-canteiro-pedras-400.webp 400w, img/paisagismo-canteiro-pedras-800.webp 800w, img/paisagismo-canteiro-pedras-853.webp 853w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="853" height="568" alt="Rosas e folhagens junto ao caminho de pedras e ao gramado" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-menu-1320.webp" aria-label="Ampliar foto: Guardanapo de linho com nó sobre o menu ilustrado com a fachada da chácara"><img src="img/casamento-menu-400.webp" srcset="img/casamento-menu-400.webp 400w, img/casamento-menu-800.webp 800w, img/casamento-menu-1200.webp 1200w, img/casamento-menu-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Guardanapo de linho com nó sobre o menu ilustrado com a fachada da chácara" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/salao-noiva-trelica-1600.webp" aria-label="Ampliar foto: Noiva de costas com cauda longa sob a estrutura de madeira do salão, em preto e branco"><img src="img/salao-noiva-trelica-400.webp" srcset="img/salao-noiva-trelica-400.webp 400w, img/salao-noiva-trelica-800.webp 800w, img/salao-noiva-trelica-1200.webp 1200w, img/salao-noiva-trelica-1600.webp 1600w, img/salao-noiva-trelica-2000.webp 2000w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="2000" height="2666" alt="Noiva de costas com cauda longa sob a estrutura de madeira do salão, em preto e branco" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="cerimonias"><button type="button" class="masonry__btn" data-full="img/essenza-tenda-mata-719.webp" aria-label="Ampliar foto: Tenda com voal branco entre árvores altas e folhagens, vista a partir do jardim"><img src="img/essenza-tenda-mata-400.webp" srcset="img/essenza-tenda-mata-400.webp 400w, img/essenza-tenda-mata-719.webp 719w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="719" height="479" alt="Tenda com voal branco entre árvores altas e folhagens, vista a partir do jardim" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-pista-1600.webp" aria-label="Ampliar foto: Noivos chegando à pista de dança entre convidados e arranjos de flores brancas"><img src="img/casamento-pista-400.webp" srcset="img/casamento-pista-400.webp 400w, img/casamento-pista-800.webp 800w, img/casamento-pista-1200.webp 1200w, img/casamento-pista-1600.webp 1600w, img/casamento-pista-1920.webp 1920w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1920" height="1280" alt="Noivos chegando à pista de dança entre convidados e arranjos de flores brancas" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-bancada-1320.webp" aria-label="Ampliar foto: Bancada de madeira com espelho iluminado e arranjos florais para o making of"><img src="img/casa-branca-bancada-400.webp" srcset="img/casa-branca-bancada-400.webp 400w, img/casa-branca-bancada-800.webp 800w, img/casa-branca-bancada-1200.webp 1200w, img/casa-branca-bancada-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Bancada de madeira com espelho iluminado e arranjos florais para o making of" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-mata-luz-853.webp" aria-label="Ampliar foto: Luz do sol atravessando as folhas sobre a mata nativa"><img src="img/paisagismo-mata-luz-400.webp" srcset="img/paisagismo-mata-luz-400.webp 400w, img/paisagismo-mata-luz-800.webp 800w, img/paisagismo-mata-luz-853.webp 853w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="853" height="568" alt="Luz do sol atravessando as folhas sobre a mata nativa" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/solar-bar-1320.webp" aria-label="Ampliar foto: Bar de madeira com uma árvore ao fundo e luminárias de franja no Solar"><img src="img/solar-bar-400.webp" srcset="img/solar-bar-400.webp 400w, img/solar-bar-800.webp 800w, img/solar-bar-1200.webp 1200w, img/solar-bar-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Bar de madeira com uma árvore ao fundo e luminárias de franja no Solar" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-flores-salao-1280.webp" aria-label="Ampliar foto: Arranjo exuberante de lírios e rosas sob luminárias de fibra natural"><img src="img/casamento-flores-salao-400.webp" srcset="img/casamento-flores-salao-400.webp 400w, img/casamento-flores-salao-800.webp 800w, img/casamento-flores-salao-1200.webp 1200w, img/casamento-flores-salao-1280.webp 1280w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1280" height="853" alt="Arranjo exuberante de lírios e rosas sob luminárias de fibra natural" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-escrivaninha-928.webp" aria-label="Ampliar foto: Escrivaninha de madeira maciça e cadeira de palhinha no Ateliê da Noiva"><img src="img/casa-branca-escrivaninha-400.webp" srcset="img/casa-branca-escrivaninha-400.webp 400w, img/casa-branca-escrivaninha-800.webp 800w, img/casa-branca-escrivaninha-928.webp 928w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="928" height="618" alt="Escrivaninha de madeira maciça e cadeira de palhinha no Ateliê da Noiva" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="paisagismo"><button type="button" class="masonry__btn" data-full="img/paisagismo-passarela-noiva-720.webp" aria-label="Ampliar foto: Noiva caminhando pela passarela de madeira entre a vegetação do jardim"><img src="img/paisagismo-passarela-noiva-400.webp" srcset="img/paisagismo-passarela-noiva-400.webp 400w, img/paisagismo-passarela-noiva-720.webp 720w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="720" height="1280" alt="Noiva caminhando pela passarela de madeira entre a vegetação do jardim" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/essenza-lounge-jardim-1151.webp" aria-label="Ampliar foto: Lounge com sofás claros e poltronas de madeira diante de um canteiro de folhagens tropicais"><img src="img/essenza-lounge-jardim-400.webp" srcset="img/essenza-lounge-jardim-400.webp 400w, img/essenza-lounge-jardim-800.webp 800w, img/essenza-lounge-jardim-1151.webp 1151w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1151" height="1151" alt="Lounge com sofás claros e poltronas de madeira diante de um canteiro de folhagens tropicais" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/salao-mesas-flores-1320.webp" aria-label="Ampliar foto: Mesas do salão com arranjos de rosas em tons de pêssego sob o telhado de madeira"><img src="img/salao-mesas-flores-400.webp" srcset="img/salao-mesas-flores-400.webp 400w, img/salao-mesas-flores-800.webp 800w, img/salao-mesas-flores-1200.webp 1200w, img/salao-mesas-flores-1320.webp 1320w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1320" height="1320" alt="Mesas do salão com arranjos de rosas em tons de pêssego sob o telhado de madeira" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="recepcao"><button type="button" class="masonry__btn" data-full="img/casamento-noivos-doces-1138.webp" aria-label="Ampliar foto: Noivos diante da mesa de doces cercada de flores e velas, no salão à noite"><img src="img/casamento-noivos-doces-400.webp" srcset="img/casamento-noivos-doces-400.webp 400w, img/casamento-noivos-doces-800.webp 800w, img/casamento-noivos-doces-1138.webp 1138w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="1138" height="758" alt="Noivos diante da mesa de doces cercada de flores e velas, no salão à noite" loading="lazy" decoding="async"></button></li>
+      <li class="masonry__item" data-cat="making-of"><button type="button" class="masonry__btn" data-full="img/casa-branca-noiva-retrato-1600.webp" aria-label="Ampliar foto: Retrato em preto e branco de uma noiva sentada junto a uma parede de tijolos"><img src="img/casa-branca-noiva-retrato-400.webp" srcset="img/casa-branca-noiva-retrato-400.webp 400w, img/casa-branca-noiva-retrato-800.webp 800w, img/casa-branca-noiva-retrato-1200.webp 1200w, img/casa-branca-noiva-retrato-1600.webp 1600w, img/casa-branca-noiva-retrato-2000.webp 2000w" sizes="(min-width: 1100px) 25vw, (min-width: 700px) 33vw, 50vw" width="2000" height="2666" alt="Retrato em preto e branco de uma noiva sentada junto a uma parede de tijolos" loading="lazy" decoding="async"></button></li>
+    </ul>
+    <p class="gallery__more">Mais registros no Instagram <a href="https://www.instagram.com/chacaramanancial_/" target="_blank" rel="noopener">@chacaramanancial_</a></p>
+  </div>
+</section>
+
+<!-- ============ 8. NÚMEROS ============ -->
+<section class="numbers" aria-label="A Chácara Manancial em números">
+  <div class="container numbers__grid">
+    <div class="number reveal">
+      <p class="number__value"><span class="number__prefix">até</span> <span data-count="500">500</span></p>
+      <p class="number__label">convidados</p>
+    </div>
+    <div class="number reveal">
+      <p class="number__value"><span data-count="1">1</span></p>
+      <p class="number__label">evento por dia, com exclusividade <mark class="tbc">[A CONFIRMAR]</mark></p>
+    </div>
+    <div class="number reveal">
+      <p class="number__value"><span data-count="45">45</span><span class="number__unit">km</span></p>
+      <p class="number__label">do Aeroporto de Florianópolis <mark class="tbc">[A CONFIRMAR]</mark></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CALENDÁRIO ============ -->
+<section class="section dates" id="datas">
+  <div class="container">
+    <header class="section-head section-head--center reveal">
+      <p class="kicker">Agenda</p>
+      <h2 class="title">Consulte <em>a sua data.</em></h2>
+      <p class="section-head__text">Os casais costumam reservar com bastante antecedência. Navegue pelos próximos 18 meses e toque em uma data para pedir seu orçamento.</p>
+    </header>
+
+    <div class="calendar reveal" id="calendar">
+      <div class="calendar__bar">
+        <button type="button" class="calendar__nav" data-cal="prev" aria-label="Mês anterior"><svg class="icon"><use href="#i-arrow-left"/></svg></button>
+        <p class="calendar__range" id="calRange" aria-live="polite"></p>
+        <button type="button" class="calendar__nav" data-cal="next" aria-label="Próximo mês"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+      </div>
+      <div class="calendar__months" id="calMonths"></div>
+      <div class="calendar__legend" aria-hidden="true">
+        <span><i class="lg lg--open"></i>Consultar</span>
+        <span><i class="lg lg--weekend"></i>Sexta e sábado</span>
+        <span><i class="lg lg--reserved"></i>Reservado</span>
+      </div>
+      <p class="calendar__hint">Use as setas do teclado para navegar entre os dias e Enter para escolher.</p>
+      <p class="calendar__status" id="calStatus" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ORÇAMENTO ============ -->
+<section class="section quote" id="orcamento">
+  <div class="container quote__grid">
+    <div class="quote__intro reveal">
+      <p class="kicker">Orçamento</p>
+      <h2 class="title">Conte-nos<br><em>sobre o seu dia.</em></h2>
+      <p class="lead">Preencha os detalhes e enviaremos tudo organizado para o nosso WhatsApp. Você recebe o retorno da própria equipe da Chácara Manancial.</p>
+      <ul class="quote__notes">
+        <li>Resposta em até 24 horas úteis <mark class="tbc">[A CONFIRMAR]</mark></li>
+        <li>Sem compromisso</li>
+        <li>Visitas com agendamento prévio</li>
+      </ul>
+    </div>
+
+    <form class="form reveal reveal--delay" id="quoteForm" novalidate>
+      <div class="form__summary" id="formSummary" tabindex="-1" hidden></div>
+
+      <div class="field">
+        <label for="f-nome">Nome do casal <span class="field__opt">ou do responsável, em eventos corporativos</span></label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana &amp; Pedro" required>
+        <p class="field__error" id="e-nome"></p>
+      </div>
+
+      <div class="field">
+        <label for="f-tipo">Tipo de evento</label>
+        <select id="f-tipo" name="tipo" required>
+          <option value="">Selecione</option>
+          <option>Casamento</option>
+          <option>Mini wedding</option>
+          <option>Destination wedding</option>
+          <option>Evento social</option>
+          <option>Evento corporativo</option>
+        </select>
+        <p class="field__error" id="e-tipo"></p>
+      </div>
+
+      <div class="field field--date">
+        <label for="f-data">Data desejada</label>
+        <input id="f-data" name="data" type="date" required>
+        <label class="check"><input type="checkbox" id="f-flex" name="flexivel"><span>Data flexível</span></label>
+        <p class="field__error" id="e-data"></p>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="f-convidados">Convidados <span class="field__opt">aprox.</span></label>
+          <input id="f-convidados" name="convidados" type="number" inputmode="numeric" min="1" max="500" placeholder="Ex.: 180" required>
+          <p class="field__error" id="e-convidados"></p>
+        </div>
+        <div class="field">
+          <label for="f-horario">Horário previsto</label>
+          <select id="f-horario" name="horario" required>
+            <option value="">Selecione</option>
+            <option>Manhã</option>
+            <option>Almoço</option>
+            <option>Tarde</option>
+            <option>Fim de tarde (pôr do sol)</option>
+            <option>Noite</option>
+            <option>Ainda não sei</option>
+          </select>
+          <p class="field__error" id="e-horario"></p>
+        </div>
+      </div>
+
+      <fieldset class="field field--radio" id="cerimoniaField" hidden>
+        <legend>Cerimônia no local?</legend>
+        <div class="radios">
+          <label class="radio"><input type="radio" name="cerimonia" value="Sim"><span>Sim</span></label>
+          <label class="radio"><input type="radio" name="cerimonia" value="Não"><span>Não</span></label>
+        </div>
+        <p class="field__error" id="e-cerimonia"></p>
+      </fieldset>
+
+      <div class="field">
+        <label for="f-origem">Como conheceu a Chácara Manancial?</label>
+        <select id="f-origem" name="origem" required>
+          <option value="">Selecione</option>
+          <option>Instagram</option>
+          <option>Google</option>
+          <option>Casamentos.com.br</option>
+          <option>Indicação</option>
+          <option>Outro</option>
+        </select>
+        <p class="field__error" id="e-origem"></p>
+      </div>
+
+      <div class="field">
+        <label for="f-mensagem">Mensagem <span class="field__opt">opcional</span></label>
+        <textarea id="f-mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre o estilo da celebração"></textarea>
+      </div>
+
+      <button class="btn btn--primary btn--block" type="submit">
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        Enviar pelo WhatsApp
+      </button>
+      <p class="form__done" id="formDone" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 11. DEPOIMENTOS ============ -->
+<section class="section testimonials" id="depoimentos">
+  <div class="container">
+    <header class="section-head section-head--center reveal">
+      <p class="kicker">Depoimentos</p>
+      <h2 class="title">Quem já <em>viveu a Manancial.</em></h2>
+    </header>
+    <ul class="testimonials__list">
+      <li class="testimonial reveal">
+        <span class="testimonial__mark" aria-hidden="true">“</span>
+        <p class="testimonial__text">[Depoimento real a inserir]</p>
+        <p class="testimonial__who">[Nome do casal] · <span>[mês/ano do casamento]</span></p>
+      </li>
+      <li class="testimonial reveal">
+        <span class="testimonial__mark" aria-hidden="true">“</span>
+        <p class="testimonial__text">[Depoimento real a inserir]</p>
+        <p class="testimonial__who">[Nome do casal] · <span>[mês/ano do casamento]</span></p>
+      </li>
+      <li class="testimonial reveal">
+        <span class="testimonial__mark" aria-hidden="true">“</span>
+        <p class="testimonial__text">[Depoimento real a inserir]</p>
+        <p class="testimonial__who">[Nome do casal] · <span>[mês/ano do casamento]</span></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 12. PERGUNTAS FREQUENTES ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq__grid">
+    <header class="section-head reveal">
+      <p class="kicker">Dúvidas</p>
+      <h2 class="title">Perguntas<br><em>frequentes.</em></h2>
+      <p class="section-head__text">Não encontrou o que procurava? Fale com a gente pelo <a href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ch%C3%A1cara%20Manancial%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">WhatsApp</a>.</p>
+    </header>
+    <div class="accordion reveal">
+      <details class="qa">
+        <summary>Os fornecedores são livres ou existe lista de exclusivos?</summary>
+        <div class="qa__a"><p>Os fornecedores são livres: buffet, fotografia, música e decoração ficam à escolha do casal. Também indicamos parceiros que já conhecem o espaço. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+      <details class="qa">
+        <summary>Até que horas a festa pode durar?</summary>
+        <div class="qa__a"><p>O horário de término é combinado em contrato, de acordo com o formato do evento. Como recebemos um único evento por dia, há flexibilidade para estender a celebração. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+      <details class="qa">
+        <summary>E se chover? Existe um plano B?</summary>
+        <div class="qa__a"><p>Sim. O salão climatizado, a Tenda Fixa e o Solar são cobertos e integrados, e a cerimônia pode ser transferida para uma área coberta sem perder a vista para o jardim. A decisão costuma ser tomada com o cerimonial na véspera. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+      <details class="qa">
+        <summary>Posso visitar o espaço antes de fechar?</summary>
+        <div class="qa__a"><p>Claro, e recomendamos. As visitas são feitas com agendamento prévio pelo WhatsApp, de terça a sábado, com a própria equipe da chácara. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+      <details class="qa">
+        <summary>Como funcionam o sinal e o pagamento?</summary>
+        <div class="qa__a"><p>A data é garantida com a assinatura do contrato e o pagamento de um sinal. O saldo pode ser parcelado até 30 dias antes do evento. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+      <details class="qa">
+        <summary>Há estacionamento para os convidados?</summary>
+        <div class="qa__a"><p>Sim, há estacionamento interno para os convidados, além de área de carga e descarga para os fornecedores. <mark class="tbc">[A CONFIRMAR]</mark></p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. AGENDE SUA VISITA ============ -->
+<section class="visit" id="visita">
+  <div class="visit__bg" aria-hidden="true"><img src="img/essenza-boas-vindas-800.webp" srcset="img/essenza-boas-vindas-400.webp 400w, img/essenza-boas-vindas-800.webp 800w, img/essenza-boas-vindas-1200.webp 1200w, img/essenza-boas-vindas-1320.webp 1320w" sizes="100vw" width="1320" height="1320" loading="lazy" decoding="async" alt=""></div>
+  <div class="container visit__content reveal">
+    <p class="kicker kicker--light">Agende sua visita</p>
+    <h2 class="title title--light">Venha sentir<br><em>o lugar de perto.</em></h2>
+    <p class="lead">Caminhe pelo jardim, ouça a cascata e imagine o seu dia. Agende uma visita e conheça a Chácara Manancial pessoalmente.</p>
+    <a class="btn btn--light" href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20Ch%C3%A1cara%20Manancial." target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+      Agendar pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ============ 14. LOCALIZAÇÃO ============ -->
+<section class="section location" id="localizacao">
+  <div class="container location__grid">
+    <div class="location__info reveal">
+      <p class="kicker">Localização</p>
+      <h2 class="title">Na Grande<br><em>Florianópolis.</em></h2>
+      <address>
+        <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+        <span>Rua Manoel Antônio Lopes<br>Antônio Carlos · SC · 88180-000</span>
+      </address>
+      <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Manoel+Ant%C3%B4nio+Lopes%2C+Ant%C3%B4nio+Carlos+-+SC" target="_blank" rel="noopener">Como chegar</a>
+    </div>
+    <div class="location__map reveal reveal--delay">
+      <iframe title="Mapa: Chácara Manancial em Antônio Carlos, SC" src="https://www.google.com/maps?q=Rua%20Manoel%20Ant%C3%B4nio%20Lopes%2C%20Ant%C3%B4nio%20Carlos%20-%20SC&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 15. RODAPÉ ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="#inicio">
+        <span class="brand__kicker">Chácara</span>
+        <span class="brand__name">Manancial</span>
+      </a>
+      <p>Espaço para casamentos e eventos.<br>Arquitetura, paisagismo e hospitalidade.</p>
+    </div>
+    <div class="footer__col">
+      <h2>Contato</h2>
+      <a href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ch%C3%A1cara%20Manancial." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>(48) 99190-0552</a>
+      <a href="https://www.instagram.com/chacaramanancial_/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>@chacaramanancial_</a>
+    </div>
+    <div class="footer__col">
+      <h2>Endereço</h2>
+      <p>Rua Manoel Antônio Lopes<br>Antônio Carlos · SC<br>Grande Florianópolis</p>
+    </div>
+    <div class="footer__col">
+      <h2>Navegue</h2>
+      <a href="#espacos">Espaços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#datas">Datas</a>
+      <a href="#orcamento">Orçamento</a>
+    </div>
+  </div>
+  <div class="container footer__base">
+    <p>© <span id="year">2026</span> Chácara Manancial. Todos os direitos reservados.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<!-- ============ 16. WHATSAPP FLUTUANTE ============ -->
+<a class="wa-float" id="waFloat" href="https://wa.me/5548991900552?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ch%C3%A1cara%20Manancial." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  <span class="wa-float__label">Fale conosco</span>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button type="button" class="lightbox__close" data-lb="close" aria-label="Fechar"><svg class="icon"><use href="#i-close"/></svg></button>
+  <button type="button" class="lightbox__nav lightbox__nav--prev" data-lb="prev" aria-label="Foto anterior"><svg class="icon"><use href="#i-arrow-left"/></svg></button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="lbImg" alt="">
+    <figcaption class="lightbox__caption"><span id="lbCaption"></span><span class="lightbox__count" id="lbCount"></span></figcaption>
+  </figure>
+  <button type="button" class="lightbox__nav lightbox__nav--next" data-lb="next" aria-label="Próxima foto"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
